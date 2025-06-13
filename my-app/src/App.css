@@ -1,0 +1,40 @@
+.container {
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+  
+  html, body {
+    height: 100%; /* Ensure the page takes the full height */
+    margin: 0; /* Remove any default margin */
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-top: auto; /* Push footer to the bottom */
+  }
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensure the page takes at least 100% of the viewport height */
+  }
+
+/* App.css */
+
+/* Layout for admin side */
+.admin-layout {
+  display: flex; /* This enables a row layout with the sidebar and content */
+  height: 100vh; /* Take full screen height */
+}
+
+.content-area {
+  margin-left: 240px; /* Push content to the right of the sidebar */
+  flex: 1; /* Content will take up remaining space */
+  padding: 20px; /* Add padding around the content */
+  overflow-y: auto; /* Make content scrollable if it overflows */
+}
+
